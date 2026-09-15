@@ -1254,7 +1254,7 @@ class ChannelList:
                                 episode = re.search('"episode" *: *(.*?),', f)
                                 seasonval = season.group(1)
                                 epval = episode.group(1).zfill(2)
-                                sxexx = (' ({})'.format(seasonval + 'x' + epval))
+                                sxexx = ''
 
                                 if str(channel) in self.UseEpisodeTitleKeepShowTitle:
                                     newShowTitle = eptitle
